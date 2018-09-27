@@ -1,0 +1,36 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+body {
+  background: $blue;
+}
+
+h1 {
+  color: $red;
+}
+
+p {
+  background: $red;
+
+  @include break($iphone5s, $ipad) {
+    background: pink;
+  }
+}
+
+.class {
+  margin-left: 0;
+  margin-right: 0;
+
+  p {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+
+    @include break($iphone5s, $ipad) {
+      background: yellow;
+      color: $red;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+//Breakpoints
+
+@mixin break($minWidth, $maxWidth) {
+  @media screen and (min-width: $minWidth) and (max-width: $maxWidth) {
+    @content;
+  }
+}
